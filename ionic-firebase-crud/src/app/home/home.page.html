@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="light">
+      To-Do List
+    </ion-title>
+    <ion-buttons slot="end">
+    <ion-button color="light" routerLinkActive="tab-selected" routerLink="/add-task">
+      <ion-icon name="add-circle"></ion-icon>
+    </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content> 
+  <div class="img-bg"></div>
+    <ion-list class="ios list-ios hydrated">
+   
+  <ion-card>
+ 
+  <ion-item *ngFor="let task of Tasks" color="tertiary" routerLink="/detail-task/{{task.id}}">
+      <ion-label>
+        <h2>{{ task.title }}</h2>
+        <p> {{ task.description }} <p>
+
+      </ion-label>
+
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/edit-task/', task.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button (click)="deleteTask(task.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+
+    </ion-item>
+  </ion-card>
+</ion-list>
+
+</ion-content>
