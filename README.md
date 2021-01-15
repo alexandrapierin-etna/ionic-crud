@@ -20,7 +20,7 @@ Les différentes étapes du projet :
    * Implémenter la mise à jour des tâches.
    * Implémenter la suppression des tâches.
    
-Les difficultés 
+Les difficultés :
 Aprés plusieurs tentatives, je n'ai pas réussi à mettre en place la fonctionnalité qui me permet de voir en détails les divers champs d'une tâche en particulier, j'ai toutefois laissé mon dossier detail-task et notamment mon fichier detail-task.page.ts afin que vous puissiez prendre connaissance de mes essais (en commentaire ligne 23, 24 et 25 ).
 
 
